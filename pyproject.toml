@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "test-task-ma"
+version = "0.1.0"
+description = "'Решения тестовых заданий в компанию \"MillionAgents\" (Junior Backend разработчик (Python)).'"
+authors = ["Vladislav Yaremenko <vlad.yaremenko.98@yandex.ru>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pre-commit = "^4.0.1"
+uvicorn = "^0.32.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
