@@ -308,7 +308,12 @@ class ShortLinksHandler:
             case _:
                 await self._method_not_allowed(send)
 
-    async def _handler(self, scope: Scope, receive: Receive, send: Send) -> None:
+    async def _handler(
+        self,
+        scope: Scope,
+        receive: Receive,
+        send: Send,
+    ) -> None:
         """Обработчик запросов.
 
         Args:
