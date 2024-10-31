@@ -12,6 +12,6 @@ EMAIL_REGULAR_FOR_VALIDATION = (
 )
 PHONE_REGULAR_FOR_VALIDATION = r"^\+7\s*\d{3}\s*\d{3}\s*\d{2}\s*\d{2}$"
 SKYPE_REGULAR = r"skype:([a-z]+.)*[a-z]+"
-SKYPE_REGULAR_FOR_VALIDATION = (r"^({}$|" r'<a href="{}\?call">.*</a>$)').format(
+SKYPE_REGULAR_FOR_VALIDATION = (r'^({}$|<a href="{}\?call">.*</a>$)').format(
     SKYPE_REGULAR, SKYPE_REGULAR
 )
